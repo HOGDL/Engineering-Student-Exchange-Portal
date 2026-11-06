@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Engineering Student Exchange Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="items.html">Available Items</a>
+            <a href="add-item.html">List an Item</a>
+            <a href="request.html">Request Item</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Request an Item</h2>
+        <form action="/request-item" method="POST">
+            <label for="name">Your Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Your Phone / WhatsApp:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="item_name">Item Name:</label>
+            <input type="text" id="item_name" name="item_name" required>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="3"></textarea>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Faculty of Electronic Engineering - Menofia University &copy; 2026</p>
+    </footer>
+</body>
+</html>

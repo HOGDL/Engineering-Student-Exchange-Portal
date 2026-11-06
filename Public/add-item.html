@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List New Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Engineering Student Exchange Portal</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="items.html">Available Items</a>
+            <a href="add-item.html">List an Item</a>
+            <a href="request.html">Request Item</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Offer Tools or Books for Exchange/Sale</h2>
+        <form action="/add-item" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone / WhatsApp Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="title">Item Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="Lab Equipment">Lab Equipment</option>
+                <option value="Drawing Tools">Drawing Tools</option>
+                <option value="Textbooks & References">Textbooks & References</option>
+            </select>
+
+            <label for="price">Price (EGP) - enter 0 for Free:</label>
+            <input type="number" id="price" name="price" step="0.5" required>
+
+            <label for="description">Condition & Description:</label>
+            <textarea id="description" name="description" rows="3"></textarea>
+
+            <button type="submit">Publish Item</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Faculty of Electronic Engineering - Menofia University &copy; 2026</p>
+    </footer>
+</body>
+</html>
